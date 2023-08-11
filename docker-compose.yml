@@ -9,11 +9,12 @@ services:
       - db
     environment:
       - DATABASE_HOST=db
-    command: npx ts-node src/index.ts
+    command: npm run dev
     env_file:
       - .env
     volumes:
       - ./api:/app
+      - /app/node_modules
   db:
     image: mysql:8
     environment:
