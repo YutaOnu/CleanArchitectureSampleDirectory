@@ -13,3 +13,11 @@ router.post("/", (req: express.Request, res: express.Response) => {
   res.send("respond with a create" + JSON.stringify(response));
 });
 module.exports = router;
+
+// 下記をターミナルで実行して、動作確認してみてください
+// curl -X POST -H "Content-Type: application/json" \
+// -d '{
+//   "title": "サンプルタssイトル",
+//   "overview": "サンプルの概要"
+// }' \
+// http://localhost:3000/roadmaps
