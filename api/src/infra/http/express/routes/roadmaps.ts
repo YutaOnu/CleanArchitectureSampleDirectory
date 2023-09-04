@@ -14,10 +14,10 @@ router.post("/", (req: express.Request, res: express.Response) => {
 });
 module.exports = router;
 
-// 下記をターミナルで実行して、動作確認してみてください
+// 下記をターミナルで実行して、動作確認できます
 // curl -X POST -H "Content-Type: application/json" \
 // -d '{
-//   "title": "サンプルタssイトル",
+//   "title": "サンプルタイトル",
 //   "overview": "サンプルの概要"
 // }' \
 // http://localhost:3000/roadmaps
